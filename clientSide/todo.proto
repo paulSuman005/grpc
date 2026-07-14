@@ -4,7 +4,7 @@ service TodoServices {
     rpc GetTodo(TodoId) returns (Todo) {}
     rpc GetTodoList(Empty) returns (TodoList) {}
     rpc CreateTodo(Todo) returns (Todo) {}
-    rpc DeleteTodo(Todo) returns (Empty) {}
+    rpc DeleteTodo(TodoId) returns (Empty) {}
 }
 
 message Empty {}
